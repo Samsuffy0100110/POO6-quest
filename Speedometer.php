@@ -6,10 +6,10 @@ class Speedometer
     public const KILOMETERS = 1.60;
     public const MILES = 0.621;
 
-    public static function convertKmToMiles(int $kms): int
+    public static function convertKmToMiles(float $kms): float
     {
         
-        return floatval($kms * self::MILES);
+        return $kms * self::MILES;
         
     }
 
